@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    /* Centrar verticalmente y permitir que quepa más contenido */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alineación al inicio para ahorrar espacio vertical */
+    padding: 15px; /* Menos padding general */
+    min-height: 100vh; /* Para que ocupe toda la altura */
+}
+
+.calculator-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px; /* Menos padding interno */
+    max-width: 400px; /* Reducción de ancho a 400px (más compacto) */
+    width: 100%;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.8em; /* Tamaño de fuente ligeramente menor */
+}
+
+.subtitle {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 20px; /* Menos margen */
+    font-size: 0.9em;
+}
+
+.section-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 15px; /* Menos padding de la sección */
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.section-card h2 {
+    color: #343a40;
+    font-size: 1.1em; /* Títulos de sección más pequeños */
+    border-bottom: 1px solid #e9ecef; /* Borde más delgado */
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Menos margen entre campos */
+    font-size: 0.9em;
+}
+
+label {
+    font-weight: 600;
+    color: #495057;
+    flex-basis: 65%; /* Más espacio para la etiqueta */
+}
+
+input[type="number"] {
+    flex-basis: 30%;
+    padding: 8px; /* Padding de entrada más pequeño */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    text-align: right;
+    font-size: 0.95em;
+}
+
+button {
+    width: 100%;
+    padding: 10px; /* Padding de botón más pequeño */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para Resultados Compactos */
+.result-box.compact {
+    margin-top: 10px;
+    padding: 10px; /* Padding de resultado más pequeño */
+    font-size: 1em; /* Tamaño de fuente ligeramente menor */
+    display: flex;
+    justify-content: space-between; /* Alinear etiqueta y valor */
+    align-items: center;
+}
+
+.final-result.compact {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+}
+
+.result-box.compact .result-value {
+    font-weight: bold;
+    font-size: 1.1em; /* Tamaño del valor */
+    margin-top: 0;
+}
+
+.final-result.compact .result-value {
+    color: #ffc107;
+    font-size: 1.3em; /* Tamaño del valor final */
+}
+
+.note {
+    font-size: 0.8em; /* Nota más pequeña */
+    color: #6c757d;
+    text-align: center;
+    margin-top: 15px;
+}

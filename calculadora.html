@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Precio de Venta Neto</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Costo y Precio de Venta</h1>
+        <p class="subtitle">Calculadora de Adquisición y Utilidad</p>
+
+        <div class="section-card">
+            <h2>1. Costo de Adquisición</h2>
+            <div class="input-group">
+                <label for="precioLista">Precio de Lista ($):</label>
+                <input type="number" id="precioLista" value="100" min="0" step="0.01">
+            </div>
+            <div class="input-group">
+                <label for="descuento">Tasa de Descuento (%):</label>
+                <input type="number" id="descuento" value="20" min="0" max="100" step="0.1">
+            </div>
+            <div class="result-box compact" id="resultadoCostoCliente">
+                Costo (Adquisición): <span class="result-value">$0.00</span>
+            </div>
+        </div>
+        
+        <div class="section-card">
+            <h2>2. Precio de Venta Final</h2>
+            <div class="input-group">
+                <label for="margenUtilidad">Margen de Utilidad sobre Venta (%):</label>
+                <input type="number" id="margenUtilidad" value="30" min="0" max="99.9" step="0.1">
+            </div>
+            
+            <button onclick="calcularTodo()">Calcular Precios</button>
+            
+            <div class="result-box final-result compact" id="resultadoPrecioVenta">
+                Precio de Venta Sugerido: <span class="result-value">$0.00</span>
+            </div>
+        </div>
+
+        <p class="note">Ingresa porcentajes (ej: 20) y presiona "Calcular".</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
